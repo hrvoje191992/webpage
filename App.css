@@ -1,0 +1,210 @@
+/* App.css */
+.app {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  
+}
+
+.chatbotButton {
+margin-top: 8%;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.chatbotButton:hover {
+  background-color: #555;
+}
+
+.chatWindow {
+  width: 95%;
+  height: 90%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.chatMessages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chatMessage {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.chatMessage.user {
+  background-color: #e6e6e6;
+  align-self: flex-end;
+}
+
+.chatControls {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.chatControls input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.chatControls button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.chatControls button:hover {
+  background-color: #555;
+}
+h1{
+  text-align: center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: lightgrey;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.profile, .menu {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  z-index: 1000;
+}
+/* ... (rest of your styles) */
+.hamburger {
+  cursor: pointer;
+  z-index: 10001; /* Updated z-index to ensure it's clickable */
+}
+
+.dropdown {
+  position: absolute; /* Changed from absolute to fixed */
+  top: 50px; /* Adjusted the top position */
+  right: 10px; /* Adjusted the right position */
+  background-color: white;
+  border: 1px solid black;
+  z-index: 10000; 
+  width: 150px; /* Set a specific width */
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+.dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.dropdown button:hover {
+  background-color: lightgrey;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #f7f7f7;
+  border-left: 1px solid #ddd;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.newChatButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newChatButton:hover {
+  background-color: #0056b3;
+}
+
+.sidebar .chatMessage.user {
+  cursor: pointer;
+  color: blue;
+}
+
+.sidebar .chatMessage.user:hover {
+  text-decoration: underline;
+}
+.sessions-container {
+  overflow-y: scroll;
+  max-height: 500px; /* Set a maximum height that works for your layout */
+}
+.session{
+  background-color: #007bff;
+  padding-bottom: 5px;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  border: 1px solid black;
+
+  
+}
+.session > button{
+
+  width: 80%;
+  text-align: center;
+}
